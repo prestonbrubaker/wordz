@@ -10,12 +10,12 @@ body {
 }
 
 @font-face {
-    font-family: 'serious'; /* Choose a name for your font */
-    src: url('serious.ttf') format('truetype'); /* Adjust the path and format accordingly */
+    font-family: 'zesty'; /* Choose a name for your font */
+    src: url('zesty.ttf') format('truetype'); /* Adjust the path and format accordingly */
 }
 
 h1 {
-    font-family: 'serious', sans-serif;
+    font-family: 'zesty', sans-serif;
     color: #333;
     text-align: center;
 }
