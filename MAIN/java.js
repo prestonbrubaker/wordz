@@ -6,7 +6,7 @@ function loadChat() {
             const chatBox = document.getElementById('chat-box');
             chatBox.innerHTML = ''; // Clear chat box
             // Reverse the data array to show the most recent messages first
-            data.reverse().forEach(message => {
+            data.slice().reverse().forEach(message => {
                 const div = document.createElement('div');
                 const p = document.createElement('p');
                 const span = document.createElement('span');
@@ -16,9 +16,9 @@ function loadChat() {
                 span.style.fontSize = 'small';
                 span.style.marginRight = '10px';
 
-                div.appendChild(span);
-                div.appendChild(p);
-                chatBox.appendChild(div); // Append the whole div
+                div.appendChild(span); // First add the timestamp and IP
+                div.appendChild(p); // Then add the chat message
+                chatBox.insertBefore(div, chatBox.firstChild); // Insert the new div at the top
             });
         })
         .catch(error => console.error('Error fetching chat data:', error));
