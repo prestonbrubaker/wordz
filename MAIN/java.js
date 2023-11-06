@@ -37,14 +37,18 @@ function loadChat() {
 }
 
 function change_submit_button() {
-    submit.style.color = hsl(color_sub, 100%, 50%);
+    submit.style.color = 'hsl(' + color_sub + ', 100%, 50%)';
+    color_sub += 10;
 }
 
 // Set an interval to automatically refresh the chat by calling the loadChat function every 5 seconds
 setInterval(loadChat, 5000);
 
 // Set an interval to change the color of the submit button every second
-setInterval(change_submit_button, 1000);
+setInterval(change_submit_button, 10);
 
 // Call the loadChat function when the window loads to populate the chat on initial page load
 window.onload = loadChat;
+
+// Initialize the submit button's color
+change_submit_button();
