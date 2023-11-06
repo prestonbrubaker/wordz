@@ -11,6 +11,10 @@ h1 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
 form {
     max-width: 600px;
     margin: 20px auto;
