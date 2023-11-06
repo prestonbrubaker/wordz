@@ -47,25 +47,31 @@ form {
     border-radius: 4px;
 }
 
-input[type="text"] {
-    width: calc(100% - 120px);
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.pleasework {
+    display: flex;
+    align-items: center
 }
+    input[type="text"] {
+        flex-grow: 1;
+        width: calc(100% - 120px);
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
 
-input[type="submit"] {
-    width: 100px;
-    padding: 10px;
-    border: none;
-    background-color: #606d60;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
+    input[type="submit"] {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 100px;
+        padding: 10px;
+        border: none;
+        background-color: #606d60;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
-input[type="submit"]:hover {
-    background-color: #4a544a;
-}
-
+    input[type="submit"]:hover {
+        background-color: #4a544a;
+    }
