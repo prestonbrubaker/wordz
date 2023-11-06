@@ -10,7 +10,7 @@ from datetime import datetime
 PORT = 58541
 # Define the name of the file where chat data will be stored
 DATA_FILE = 'chat_data.json'
-DAtA_FILE_2 = 'user_data.json'
+DATA_FILE_2 = 'user_data.json'
 
 # Create a class called ChatHandler that inherits from SimpleHTTPRequestHandler, which can handle HTTP requests
 class ChatHandler(http.server.SimpleHTTPRequestHandler):
