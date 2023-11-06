@@ -38,11 +38,11 @@ input[type="text"],
 input[type="submit"]{
     padding: 0.5rem;
     border-radius: 0.2rem;
+    margin-right: 0.5rem;
 }
 
 input[type="text"] {
     flex-grow: 1;
-    margin-right: 0.5rem;
     border: 1px solid #ddd;
 }
 

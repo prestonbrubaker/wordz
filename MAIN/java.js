@@ -38,6 +38,7 @@ function loadChat() {
 
 function change_submit_button() {
     submit.style.backgroundColor = 'hsl(' + color_sub + ', 100%, 50%)';
+    submittemp.style.backgroundColor = 'hsl(' + color_sub + ', 100%, 50%)';
     color_sub += 2;
 }
 
