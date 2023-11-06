@@ -57,6 +57,9 @@ function change_submit_button() {
 // Set an interval to automatically refresh the chat by calling the loadChat function every 5 seconds
 setInterval(loadChat, 5000);
 
+// Set an interval to automatically refresh the chat by calling the loadChat function every 5 seconds
+setInterval(getUser, 2501);
+
 // Set an interval to change the color of the submit button every second
 setInterval(change_submit_button, 50);
 
