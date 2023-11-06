@@ -1,4 +1,14 @@
 /* style.css contents */
+
+html {
+    font-size: 125%; /* This is equivalent to 20px if the browser's default font size is 16px */
+}
+
+@font-face {
+    font-family: 'serious'; /* Choose a name for your font */
+    src: url('serious.ttf') format('truetype'); /* Adjust the path and format accordingly */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -7,6 +17,7 @@ body {
 }
 
 h1 {
+    font-family: 'serious', sans-serif;
     color: #333;
     text-align: center;
 }
