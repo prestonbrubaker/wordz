@@ -36,9 +36,21 @@ function loadChat() {
         .catch(error => console.error('Error fetching chat data:', error)); // Log errors to the console if the fetch operation fails
 }
 
+function getUser() {
+    // Make a GET request to retrieve the chat data in JSON format from the 'user_data.json' file
+    fetch('user_data.json')
+        .then(response => response.json()) // Convert the response to JSON
+        .then(data => {
+                const chatBox = document.getElementById('chat-box');
+                chatBox.innerHTML = ''; // Clear the current contents of the chat box
+        })
+        .catch(error => console.error('Error fetching user data:', error)); // Log errors to the console if the fetch operation fails
+}
+
 function change_submit_button() {
-    submit.style.backgroundColor = 'hsl(' + color_sub + ', 100%, 50%)';
-    submittemp.style.backgroundColor = 'hsl(' + color_sub + ', 100%, 50%)';
+    var color_sub_temp = color_sub + 180;
+    submit.style.backgroundColor = 'hsl(' + color_sub + ', 50%, 50%)';
+    submittemp.style.backgroundColor = 'hsl(' + color_sub_temp + ', 50%, 50%)';
     color_sub += 2;
 }
 
