@@ -10,11 +10,15 @@
     <p>Use the chatbox below to type anything</p>
 
     <form action="/submit-form" method="post">
-        <label for="name">Name:</label>
+        <label for="chat">Chat:</label>
         <input type="text" id="chat" name="chat">
         <input type="submit" value="Submit">
     </form>
 
-    
+    <div id="chat-box">
+        <!-- Chat messages will be displayed here -->
+    </div>
+
+    <script src="java.js"></script>
 </body>
 </html>
